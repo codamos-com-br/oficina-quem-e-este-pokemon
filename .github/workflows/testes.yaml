@@ -1,0 +1,22 @@
+name: Testes automatizados
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  Testes:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: [ 7.4, 8.0, 8.1 ]
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Instalar dependências
+        run: composer install
+
+      - name: Rodar testes
+        run: php bin/phpunit

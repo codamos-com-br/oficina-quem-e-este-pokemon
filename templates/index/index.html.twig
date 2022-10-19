@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Quem é este Pokémon?{% endblock %}
+{% block stylesheets %}
+  <link rel="stylesheet" href="pokemon.css" />
+  <link rel="stylesheet" href="main.css" />
+{% endblock %}
+{% block javascripts %}
+  <script type="application/javascript" src="main.js"></script>
+{% endblock %}
+
+{% block body %}
+<main class="framed">
+  <img src="{{ pokemon_img }}" alt="Pokémon não identificado" class="pokemon-img" />
+</main>
+<aside class="framed">
+  <h2>Quem é este Pokémon?</h2>
+
+  <form class="pokemon-guess">
+    <input type="text" name="name" autofocus />
+    <button name="guess" type="submit">VAI!</button>
+  </form>
+
+  <h3>Tentativas</h3>
+  <ul id="guesses"></ul>
+</aside>
+{% endblock %}

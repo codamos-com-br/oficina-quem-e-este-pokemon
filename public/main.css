@@ -1,0 +1,48 @@
+@media (min-width: 769px) {
+  body {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+
+main {
+  text-align: center;
+}
+
+main img {
+  width: auto;
+  min-height: 25vh;
+}
+
+aside.framed.disabled::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .15);
+} 
+
+form.pokemon-guess {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+form.pokemon-guess input {
+  border-radius: 10px;
+  height: 30px;
+}
+
+ul#guesses {
+  margin: 0;
+  padding: 0;
+  padding-inline-start: 30px;
+}
+
+#guesses li {
+  margin: 10px 0;
+}
+

@@ -29,7 +29,25 @@ $ cd quem-e-este-pokemon/
 $ composer install
 ```
 
-### 3 – Rode os testes
+### 3 – Inicialize o banco de dados
+
+O projeto utiliza um banco de dados SQLite. Para inicializar o banco
+rode o comando:
+
+```
+$ php bin/console doctrine:schema:update --force
+```
+
+### 4 – Sincronize com a PokéAPI
+
+Nós dependemos da base de Pokémons que a [PokéAPI](https://github.com/PokeAPI/pokeapi) oferece.
+Rode o seguinte comando:
+
+```
+$ php bin/console pokeapi:sync
+```
+
+### 5 – Rode os testes
 
 ```
 $ php bin/phpunit

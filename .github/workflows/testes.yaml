@@ -19,5 +19,8 @@ jobs:
       - name: Instalar dependências
         run: composer install
 
+      - name: Instalar bancos de dados
+        run: php bin/console doctrine:schema:update --force --env=test
+
       - name: Rodar testes
         run: php bin/phpunit

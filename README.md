@@ -36,6 +36,7 @@ rode o comando:
 
 ```
 $ php bin/console doctrine:schema:update --force
+$ php bin/console doctrine:schema:update --force --env=test
 ```
 
 ### 4 – Sincronize com a PokéAPI

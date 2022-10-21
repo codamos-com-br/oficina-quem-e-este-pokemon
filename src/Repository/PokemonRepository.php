@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Repository;
 
 use App\Entity\Pokemon;
+use DateTimeInterface;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
@@ -39,5 +40,13 @@ class PokemonRepository extends ServiceEntityRepository
         if ($flush) {
             $this->getEntityManager()->flush();
         }
+    }
+
+    public function getPokemonByDate(DateTimeInterface $date): Pokemon
+    {
+        mt_srand((int) $date->format('dmY'));
+
+        $id = mt_rand(1, 500);
+        return $this->find((string) $id);
     }
 }

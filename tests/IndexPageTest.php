@@ -14,6 +14,6 @@ class IndexPageTest extends WebTestCase
         $client->request('GET', '/');
 
         $this->assertResponseIsSuccessful();
-        $this->assertSelectorTextContains('h2', 'Quem é este Pokémon?');
+        $this->assertSelectorTextContains('h1', 'Quem é este Pokémon?');
     }
 }

@@ -16,4 +16,13 @@ class IndexPageTest extends WebTestCase
         $this->assertResponseIsSuccessful();
         $this->assertSelectorTextContains('h1', 'Quem é este Pokémon?');
     }
+
+    public function testThatSummitsDaysPokemonIsYanma(): void
+    {
+        $client = self::createClient();
+        $client->request('GET', '/');
+
+        $this->assertResponseIsSuccessful();
+        $this->assertSelectorExists('img[src*="/193.png"]');
+    }
 }

@@ -89,9 +89,10 @@ Para saber mais, leia o [código de conduta na íntegra](https://phpsp.org.br/co
 Agradeço imensamente à [Locaweb](https://lcoaweb.com.br) por oferecer o
 espaço e organização para o evento.
 
-Agradeço também aà comunidade [PHPSP](https://phpsp.org.br/) pela
+Agradeço também à comunidade [PHPSP](https://phpsp.org.br/) pela
 curadoria – menções honrosas ao [PokémãoBR](https://pokemaobr.dev/),
-ao [Zé](https://twitter.com/jose_filho_dev) e [Marcel dos Santos](https://twitter.com/marcelgsantos) pelo trabalho
+ao [Zé](https://twitter.com/jose_filho_dev), [Thalita Marra](https://twitter.com/ThaliMarra)
+e [Marcel dos Santos](https://twitter.com/marcelgsantos) pelo trabalho
 incrível que fazem desde sempre com a comunidade e este evento não
 foi diferente.
 
